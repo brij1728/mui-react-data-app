@@ -25,7 +25,7 @@ export const DepartmentList: React.FC = () => {
     <List>
       {departmentData.map((department, index) => (
         <div key={index}>
-          <ListItem button onClick={() => handleClick(index)}>
+          <ListItem  onClick={() => handleClick(index)}>
             <ListItemText primary={department.name} />
             {open === index ? <ExpandLess /> : <ExpandMore />}
           </ListItem>
